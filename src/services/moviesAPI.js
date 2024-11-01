@@ -37,3 +37,15 @@ export async function getMoviesVideos(movieId) {
     throw new Error("Can't Get Movie Details ", error);
   }
 }
+
+export async function getMoviesByIdType(id) {
+  console.log("id", id);
+
+  // const url = "";
+
+  // try {
+  //   const data = await fetch("");
+  // } catch (error) {
+  //   throw new Error("Cant Fetch Data By Type" || error);
+  // }
+}

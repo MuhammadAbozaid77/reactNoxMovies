@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "home": "الرئيسية",
+    "departments": "الاقسام",
+    "movies": "أحدث الافلام",
+    "moviesSeries": "سلاسل أفلام",
+    "series": "المسلسلات",
+    "anime": "الانمى",
+    "animeMovies": "أفلام أنمى",
+    "animeSeries": "مسلسلات أنمى",
+    "kids": "أطفال",
+    "kidsMovies": "أفلام أطفال",
+    "kidsSeries": "مسلسلات أطفال",
+    "tvLists": "قائمة المسلسلات",
+    "tvLast": "أحدث الحلقات",
+    "tvshow": "العروض التلفزيونية"
+  }
+}
