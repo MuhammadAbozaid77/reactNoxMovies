@@ -13,6 +13,8 @@ import MovieDetailsLayout from "../pages/movies/MovieDetailsLayout";
 import TVDetailsLayout from "../pages/tvShow/TVDetailsLayout";
 import TvVideos from "../pages/tvShow/TvVideos";
 import SeasonDetails from "../pages/tvShow/SeasonDetails";
+import Anime from "../pages/anime/Anime";
+import Departments from "../pages/departments/Departments";
 // import TvDetails from "../pages/tvShow/TvDetails";
 
 export default function Navigations() {
@@ -22,8 +24,9 @@ export default function Navigations() {
       <Route element={<AppLayout />}>
         <Route index element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/departments" element={<Departments />} />
         {/* ------------------- Movies -------------------------- */}
-        <Route path="movies" element={<Movies />} />
+        <Route path="movies/:moviesTypeId" element={<Movies />} />
         <Route path="" element={<MovieDetailsLayout />}>
           <Route
             index
@@ -47,6 +50,8 @@ export default function Navigations() {
             element={<SeasonDetails />}
           />
         </Route>
+        {/* ------------------- anime -------------------------- */}
+        <Route path="anime" element={<Anime />} />
       </Route>
       <Route />
     </Routes>

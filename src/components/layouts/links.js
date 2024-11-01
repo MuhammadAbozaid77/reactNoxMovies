@@ -1,36 +1,39 @@
 export const links = [
   {
-    id: 1,
-    name: "home",
+    name: "navbar.home",
     path: "home",
   },
   {
-    id: 2,
-    name: "trending",
-    path: "trending",
-    list: [
-      {
-        liName: "english",
-      },
-      {
-        liName: "animation",
-      },
-      {
-        liName: "asia",
-      },
+    name: "navbar.departments",
+    path: "departments",
+  },
+  {
+    name: "navbar.movies",
+    dropdown: [
+      { name: "navbar.movies", path: "" },
+      { name: "navbar.moviesSeries", path: "" },
     ],
   },
   {
-    id: 3,
-    name: "tvShow",
-    path: "tvShow",
-    list: [
-      {
-        liName: "arabic",
-      },
-      {
-        liName: "Turkey",
-      },
+    name: "navbar.series",
+    dropdown: [
+      { name:"navbar.tvLast", path: "" },
+      { name:"navbar.tvLists", path: "" },
+      { name: "navbar.tvshow", path: "" },
+    ],
+  },
+  {
+    name: "navbar.anime",
+    dropdown: [
+      { name: "navbar.animeMovies", path: "" },
+      { name: "navbar.animeSeries", path: "" },
+    ],
+  },
+  {
+    name: "navbar.kids",
+    dropdown: [
+      { name: "navbar.kidsMovies", path: "" },
+      { name: "navbar.kidsSeries", path: "" },
     ],
   },
 ];
